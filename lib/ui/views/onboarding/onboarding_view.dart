@@ -74,10 +74,13 @@ class OnboardingView extends StackedView<OnboardingViewModel> {
                               dotWidth: 8.h)),
                       const FHSpacing.xxLargeHeight(),
                       viewModel.currentIndex == viewModel.contents.length - 1
-                          ? CustomButton(
-                              color: colorScheme.secondary,
-                              onPressed: () {},
-                              text: 'GET STARTED',
+                          ? Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 60.w),
+                              child: CustomButton(
+                                color: colorScheme.secondary,
+                                onPressed: () {},
+                                text: 'GET STARTED',
+                              ),
                             )
                           : Row(
                               children: [
